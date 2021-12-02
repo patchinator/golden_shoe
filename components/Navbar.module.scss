@@ -1,5 +1,26 @@
 .navbar {
   width: 100vw;
-  height: 1rem;
   background-color: rgb(141, 45, 36);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .option {
+      padding: 0.25rem;
+    }
+
+    .cart {
+      background-color: rgb(155, 73, 65);
+    }
+  }
 }
