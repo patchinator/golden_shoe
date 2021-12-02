@@ -14,13 +14,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(255, 238, 238);
 
     .option {
       padding: 0.25rem;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+
+      p {
+        padding-left: 0.25rem;
+      }
     }
 
     .cart {
       background-color: rgb(155, 73, 65);
+      padding: 0.5rem;
+      height: 100%;
+
+      .cart_text {
+        display: flex;
+        align-items: center;
+
+        p {
+          padding-left: 0.25rem;
+          margin: 0;
+        }
+      }
     }
   }
 }
