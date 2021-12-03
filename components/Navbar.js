@@ -1,6 +1,13 @@
+// Hooks & Next
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
+// Internal Imports
 import style from "./Navbar.module.scss";
+import logo from "../assets/golden_shoe_logo.png";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -8,13 +15,9 @@ import {
   faPhone,
   faShoePrints,
   faBookOpen,
-  faShoppingCart,
   faBars,
   faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/golden_shoe_logo.png";
-import Image from "next/image";
-import Link from "next/link";
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -49,7 +52,12 @@ const Navbar = () => {
       </div>
 
       <div className={style.dropdown_button} onClick={dropdownHandler}>
-        <FontAwesomeIcon className={style.icon} icon={faBars} />
+        {!showDropdown && (
+          <FontAwesomeIcon className={style.icon} icon={faBars} />
+        )}
+        {showDropdown && (
+          <FontAwesomeIcon className={style.icon} icon={faArrowDown} />
+        )}
       </div>
 
       {showDropdown && (
@@ -82,13 +90,6 @@ const Navbar = () => {
           </Link>
         </div>
       )}
-      {/* <div className={style.cart}>
-        <div className={style.cart_text}>
-          <FontAwesomeIcon className={style.icon} icon={faShoppingCart} />
-          <p>Your shopping cart:</p>
-        </div>
-        <div>Shoes: 4 Price: £193.10</div>
-      </div> */}
     </nav>
   );
 };
