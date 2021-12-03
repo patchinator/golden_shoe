@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import style from "./Navbar.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,13 +17,32 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef(null);
 
   const dropdownHandler = () => {
     setShowDropdown((prev) => !prev);
   };
 
+  useEffect(() => {
+    const clickOutsideHandler = (event) => {
+      if (
+        showDropdown &&
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setShowDropdown(false);
+      }
+    };
+
+    document.addEventListener("click", clickOutsideHandler);
+
+    return () => {
+      document.removeEventListener("click", clickOutsideHandler);
+    };
+  }, [showDropdown]);
+
   return (
-    <nav className={style.navbar}>
+    <nav ref={dropdownRef} className={style.navbar}>
       <div className={style.title}>
         <Image src={logo} width="140px" height="50px" alt="Golden Shoe Logo" />
       </div>
