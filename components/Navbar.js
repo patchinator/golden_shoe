@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/golden_shoe_logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
 
   return (
     <nav ref={dropdownRef} className={style.navbar}>
-      <div className={style.title}>
+      <div className={style.logo}>
         <Image src={logo} width="140px" height="50px" alt="Golden Shoe Logo" />
       </div>
 
@@ -53,14 +54,18 @@ const Navbar = () => {
 
       {showDropdown && (
         <div className={style.dropdown}>
-          <div className={style.option}>
-            <p>Home</p>
-            <FontAwesomeIcon className={style.icon} icon={faHome} />
-          </div>
-          <div className={style.option}>
-            <p>Products</p>
-            <FontAwesomeIcon className={style.icon} icon={faShoePrints} />
-          </div>
+          <Link href="/" passHref>
+            <div className={style.option}>
+              <p>Home</p>
+              <FontAwesomeIcon className={style.icon} icon={faHome} />
+            </div>
+          </Link>
+          <Link href="/products" passHref>
+            <div className={style.option}>
+              <p>Products</p>
+              <FontAwesomeIcon className={style.icon} icon={faShoePrints} />
+            </div>
+          </Link>
           <div className={style.option}>
             <p>My Account</p>
             <FontAwesomeIcon className={style.icon} icon={faUser} />
@@ -69,10 +74,12 @@ const Navbar = () => {
             <p>About</p>
             <FontAwesomeIcon className={style.icon} icon={faBookOpen} />
           </div>
-          <div className={style.option}>
-            <p>Contact</p>
-            <FontAwesomeIcon className={style.icon} icon={faPhone} />
-          </div>
+          <Link href="/contact" passHref>
+            <div className={style.option}>
+              <p>Contact</p>
+              <FontAwesomeIcon className={style.icon} icon={faPhone} />
+            </div>
+          </Link>
         </div>
       )}
       {/* <div className={style.cart}>
