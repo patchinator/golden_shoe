@@ -1,20 +1,53 @@
+@import "../styles/media.scss";
+
 .navbar {
   width: 100vw;
   background-color: rgb(141, 45, 36);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-left: 0.5rem;
+  color: rgb(241, 236, 216);
+  position: relative;
 
   .title {
     display: flex;
     align-items: center;
   }
 
-  .options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(243, 238, 220);
+  .dropdown_button {
+    padding-right: 0.5rem;
+
+    .icon {
+      width: 1.75rem;
+    }
+  }
+
+  // .cart {
+  //   background-color: rgb(155, 73, 65);
+  //   padding: 0.5rem;
+  //   height: 100%;
+
+  //   @media only screen and (max-width: $phone) {
+  //     display: none;
+  //   }
+
+  //   .cart_text {
+  //     display: flex;
+  //     align-items: center;
+
+  //     p {
+  //       padding-left: 0.25rem;
+  //       margin: 0;
+  //     }
+  //   }
+  // }
+
+  .dropdown {
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    background: rgb(141, 45, 36);
 
     .option {
       padding: 0.25rem;
@@ -24,27 +57,15 @@
       cursor: pointer;
       transition: 120ms ease-in;
 
+      .icon {
+        width: 1.25rem;
+      }
+
       p {
         padding-right: 0.25rem;
-      }
 
-      &:hover {
-        color: white;
-      }
-    }
-
-    .cart {
-      background-color: rgb(155, 73, 65);
-      padding: 0.5rem;
-      height: 100%;
-
-      .cart_text {
-        display: flex;
-        align-items: center;
-
-        p {
-          padding-left: 0.25rem;
-          margin: 0;
+        @media only screen and (max-width: $phone) {
+          display: none;
         }
       }
     }
