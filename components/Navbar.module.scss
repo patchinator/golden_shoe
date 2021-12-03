@@ -1,0 +1,55 @@
+@import "../styles/media.scss";
+
+.navbar {
+  width: 100vw;
+  background-color: rgb(141, 45, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  color: rgb(241, 236, 216);
+  position: relative;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0 0.25rem 0;
+  }
+
+  .dropdown_button {
+    padding-right: 1rem;
+
+    .icon {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    background: rgb(141, 45, 36);
+    width: 50%;
+    border-left: 4px solid rgb(141, 45, 36);
+    border-right: 4px solid rgb(141, 45, 36);
+
+    .option {
+      padding: 0.25rem;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: 120ms ease-in;
+      border-top: 1px solid rgb(241, 236, 216);
+    }
+    .icon {
+      width: 2rem;
+    }
+
+    p {
+      padding-right: 0.25rem;
+    }
+  }
+}
