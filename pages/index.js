@@ -15,8 +15,9 @@ export default function Home() {
       <div>Home Page</div>
       <ProductCard
         title="Womens Shoes"
-        text="Fantastic current trends"
+        text="Fantastic current trends at our lowest prices. Click to find out more."
         image={womensShoesImage}
+        price="42.50"
       />
     </div>
   );
