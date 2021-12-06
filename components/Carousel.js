@@ -2,6 +2,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import style from "./Carousel.module.scss";
 import Image from "next/image";
 import { useCallback, useState } from "react";
+import { CarouselNextButton, CarouselPrevButton } from "./UI/CarouselButtons";
 
 // import { useEffect } from "react";
 
@@ -38,8 +39,8 @@ const Carousel = (props) => {
           <Image src={props.imageThree} alt={props.imageThreeAlt} />
         </div>
       </div>
-      <button onClick={scrollNext}>next</button>
-      <button onClick={scrollPrev}>prev</button>
+      <CarouselNextButton onClick={scrollNext}>next</CarouselNextButton>
+      <CarouselPrevButton onClick={scrollPrev}>prev</CarouselPrevButton>
     </div>
   );
 };
