@@ -11,9 +11,6 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Carousel = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-
   const scrollNext = useCallback(() => {
     emblaApi && emblaApi.scrollNext(), [emblaApi];
   });
@@ -21,12 +18,6 @@ const Carousel = (props) => {
   const scrollPrev = useCallback(() => {
     emblaApi && emblaApi.scrollPrev(), [emblaApi];
   });
-
-  // const onSelect = useCallback(() => {
-  //   if (!emblaApi) return;
-  //   setPrevBtnEnabled(emblaApi.canScrollPrev());
-  //   setNextBtnEnabled(emblaApi.canScrollNext());
-  // }, [emblaApi]);
 
   return (
     <div className={style.carousel} ref={emblaRef}>
