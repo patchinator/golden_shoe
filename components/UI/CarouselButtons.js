@@ -1,7 +1,15 @@
 export const CarouselNextButton = (props) => {
-  return <button onClick={props.onClick}>next</button>;
+  return (
+    <button className={props.className} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
 };
 
 export const CarouselPrevButton = (props) => {
-  return <button onClick={props.onClick}>prev</button>;
+  return (
+    <button className={props.className} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
 };

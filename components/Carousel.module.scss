@@ -1,8 +1,33 @@
 @import "./../styles/media.scss";
+@import "./../styles/colors.scss";
 
 .carousel {
   overflow: hidden;
   width: 50%;
+  position: relative;
+  margin-bottom: 0.5rem;
+
+  .button_prev,
+  .button_next {
+    color: $color_primary;
+    border: none;
+    background: none;
+    position: absolute;
+    transition: 100ms ease-in;
+    top: 50%;
+
+    &:hover {
+      color: $color_secondary;
+    }
+  }
+
+  .button_next {
+    right: 0.25rem;
+  }
+
+  .button_prev {
+    left: 0.25rem;
+  }
 
   @media screen and (max-width: $phone) {
     width: 100%;

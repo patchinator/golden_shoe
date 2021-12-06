@@ -46,8 +46,8 @@ export default function Home() {
       />
       <ProductCard
         title="Womens Boots"
-        text="Winter is here. Keep those feet warm with some of the finest and warmest boots
-        you've ever tried."
+        text="Winter is here. Keep those feet snuggly with some of the finest and warmest
+         boots you've ever tried."
         image={womensBootsImage}
         price="59.99"
       />
