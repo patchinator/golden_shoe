@@ -1,9 +1,19 @@
 import Head from "next/head";
+
+// components
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
+import Carousel from "../components/Carousel";
+
+// card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
 import trainersImage from "../assets/trainers.jpg";
 import womensBootsImage from "../assets/womens_boots.jpg";
+
+// carousel images
+import carouselImageOne from "../assets/womens_boots_2.jpg";
+import carouselImageTwo from "../assets/womens_shoes_2.jpg";
+import carouselImageThree from "../assets/fancy_shoes.jpg";
 
 export default function Home() {
   return (
@@ -14,7 +24,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div>Home Page</div>
+      <Carousel
+        imageOne={carouselImageOne}
+        imageOneAlt="Doc Martens"
+        imageTwo={carouselImageTwo}
+        imageTwoAlt={"Womens Shoes"}
+        imageThree={carouselImageThree}
+        imageThreeAlt="Fancy mens Shoes"
+      />
       <ProductCard
         title="Womens Shoes"
         text="Fantastic current trends at our lowest prices. Click to find out more."

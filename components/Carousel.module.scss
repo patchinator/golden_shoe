@@ -1,0 +1,19 @@
+@import "./../styles/media.scss";
+
+.carousel {
+  overflow: hidden;
+  width: 50%;
+
+  @media screen and (max-width: $phone) {
+    width: 100%;
+  }
+
+  .carousel_container {
+    display: flex;
+
+    .carousel_image {
+      position: relative;
+      flex: 0 0 100%;
+    }
+  }
+}
