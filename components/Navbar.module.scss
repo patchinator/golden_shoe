@@ -1,8 +1,9 @@
 @import "../styles/media.scss";
+@import "../styles/colors.scss";
 
 .navbar {
   width: 100vw;
-  background-color: rgb(141, 45, 36);
+  background-color: $color_primary;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,8 +32,8 @@
     right: 0;
     background: rgb(141, 45, 36);
     width: 50%;
-    border-left: 4px solid rgb(141, 45, 36);
-    border-right: 4px solid rgb(141, 45, 36);
+    border-left: 4px solid $color_primary;
+    border-right: 4px solid $color_primary;
 
     .option {
       padding: 0.25rem;

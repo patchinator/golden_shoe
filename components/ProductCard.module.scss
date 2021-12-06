@@ -1,0 +1,16 @@
+.card {
+  .image {
+    width: 400px;
+    height: 400px;
+    position: relative;
+
+    .card_info {
+      position: absolute;
+      width: 100%;
+      border-top: 1rem red solid;
+      background: rgba($color: #ffffff, $alpha: 0.75);
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import ProductCard from "../components/ProductCard";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <div>Home Page</div>
+      <ProductCard />
     </div>
   );
 }
