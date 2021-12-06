@@ -1,3 +1,6 @@
+@import "../styles/media.scss";
+@import "../styles/colors.scss";
+
 .card {
   .image {
     width: 400px;
@@ -7,10 +10,21 @@
     .card_info {
       position: absolute;
       width: 100%;
-      border-top: 1rem red solid;
       background: rgba($color: #ffffff, $alpha: 0.75);
       bottom: 0;
       left: 0;
+
+      .info_title {
+        background: $color_primary;
+        color: white;
+        padding: 0.25rem;
+        font-size: 18px;
+      }
+
+      .info_text {
+        padding: 0.25rem;
+        font-size: 16px;
+      }
     }
   }
 }

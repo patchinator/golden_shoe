@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
+import womensShoesImage from "../assets/womens_shoes.jpg";
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
       </Head>
       <Navbar />
       <div>Home Page</div>
-      <ProductCard />
+      <ProductCard
+        title="Womens Shoes"
+        text="Fantastic current trends"
+        image={womensShoesImage}
+      />
     </div>
   );
 }

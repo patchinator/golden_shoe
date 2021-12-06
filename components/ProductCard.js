@@ -1,14 +1,14 @@
 import style from "./ProductCard.module.scss";
 import Image from "next/image";
-import card_image from "./../assets/womens_shoes.jpg";
 
-const ProductCard = () => {
+const ProductCard = (props) => {
   return (
     <div className={style.card}>
       <div className={style.image}>
-        <Image src={card_image} alt="womens shoes" />
+        <Image src={props.image} alt={props.title} />
         <div className={style.card_info}>
-          <div>test</div>
+          <div className={style.info_title}>{props.title}</div>
+          <div className={style.info_text}>{props.text}</div>
         </div>
       </div>
     </div>
