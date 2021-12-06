@@ -2,6 +2,8 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 import womensShoesImage from "../assets/womens_shoes.jpg";
+import trainersImage from "../assets/trainers.jpg";
+import womensBootsImage from "../assets/womens_boots.jpg";
 
 export default function Home() {
   return (
@@ -17,7 +19,20 @@ export default function Home() {
         title="Womens Shoes"
         text="Fantastic current trends at our lowest prices. Click to find out more."
         image={womensShoesImage}
+        price="64.99"
+      />
+      <ProductCard
+        title="Running Shoes"
+        text="Burn off that lockdown waistline in style! We have all the top brands stocked."
+        image={trainersImage}
         price="42.50"
+      />
+      <ProductCard
+        title="Womens Boots"
+        text="Winter is here. Keep those feet warm with some of the finest and warmest boots
+        you've ever tried."
+        image={womensBootsImage}
+        price="59.99"
       />
     </div>
   );
