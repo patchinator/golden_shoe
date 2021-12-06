@@ -27,10 +27,13 @@ export default function Home() {
       <Carousel
         imageOne={carouselImageOne}
         imageOneAlt="Doc Martens"
+        imageOneDesc="Save 30% online"
         imageTwo={carouselImageTwo}
-        imageTwoAlt={"Womens Shoes"}
+        imageTwoAlt="Womens Shoes"
+        imageTwoDesc="Treat yourself"
         imageThree={carouselImageThree}
         imageThreeAlt="Fancy mens Shoes"
+        imageThreeDesc="Suit the occassion"
       />
       <ProductCard
         title="Womens Shoes"
