@@ -15,8 +15,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 25%;
-    margin-right: 25%;
 
     .contact_link {
       cursor: pointer;
@@ -27,8 +25,9 @@
       font-size: 20px;
       font-family: "Bebas Neue", cursive;
       border-radius: 1rem;
-      padding: 0.25rem;
+      padding: 0.5rem;
       transition: 100ms ease-in;
+      width: 20rem;
 
       &:hover {
         background: white;

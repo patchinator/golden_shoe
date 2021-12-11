@@ -1,6 +1,16 @@
+@import "../../styles/media.scss";
+
 .cards_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: $phone) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .cards_header {

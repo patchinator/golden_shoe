@@ -1,3 +1,9 @@
+@import "../styles/media.scss";
+
 .container {
   margin: 2rem;
+
+  @media screen and (max-width: $phone) {
+    margin: 1rem;
+  }
 }
