@@ -49,12 +49,14 @@ const Navbar = () => {
     <nav ref={dropdownRef} className={style.navbar}>
       <div className={style.logo}>
         <Link href="/" passHref>
-          <Image
-            src={logo}
-            width="140px"
-            height="50px"
-            alt="Golden Shoe Logo"
-          />
+          <a>
+            <Image
+              src={logo}
+              width="140px"
+              height="50px"
+              alt="Golden Shoe Logo"
+            />
+          </a>
         </Link>
       </div>
 

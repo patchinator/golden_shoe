@@ -1,12 +1,14 @@
 import style from "./Footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCocktail } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className={style.social_media}>
-        <FontAwesomeIcon icon={faCocktail} />
+        <div className={style.media_icon}>
+          <FontAwesomeIcon icon={faFacebook} />
+        </div>
       </div>
       <div className={style.column_wrapper}>
         <div className={style.columns}>
