@@ -1,7 +1,7 @@
 import ContactCards from "../components/Contact/ContactCards";
 import ContactInfo from "../components/Contact/ContactInfo";
 import ContactUs from "../components/Contact/ContactUs";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Header/Navbar";
 import style from "./contact.module.scss";
 
 const ContactPage = () => {

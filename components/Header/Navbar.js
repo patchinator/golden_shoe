@@ -5,7 +5,7 @@ import Link from "next/link";
 
 // Internal Imports
 import style from "./Navbar.module.scss";
-import logo from "../assets/golden_shoe_logo.png";
+import logo from "../../assets/golden_shoe_logo.png";
 
 // Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

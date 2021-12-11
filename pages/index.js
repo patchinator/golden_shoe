@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 // components
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Header/Navbar";
 import ProductCard from "../components/ProductCard";
 import Carousel from "../components/Carousel";
 
