@@ -48,7 +48,14 @@ const Navbar = () => {
   return (
     <nav ref={dropdownRef} className={style.navbar}>
       <div className={style.logo}>
-        <Image src={logo} width="140px" height="50px" alt="Golden Shoe Logo" />
+        <Link href="/" passHref>
+          <Image
+            src={logo}
+            width="140px"
+            height="50px"
+            alt="Golden Shoe Logo"
+          />
+        </Link>
       </div>
 
       <div className={style.dropdown_button} onClick={dropdownHandler}>
