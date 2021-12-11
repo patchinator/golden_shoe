@@ -1,12 +1,14 @@
-import ContactCard from "../components/ContactCard";
+import ContactCard from "../components/Contact/ContactCard";
+import ContactInfo from "../components/Contact/ContactInfo";
 import Navbar from "../components/Navbar";
+import style from "./contact.module.scss";
 
 const ContactPage = () => {
   return (
     <section>
       <Navbar />
-      <section>
-        <div>Contact Us</div>
+      <section className={style.container}>
+        <ContactInfo />
         <ContactCard />
       </section>
     </section>
