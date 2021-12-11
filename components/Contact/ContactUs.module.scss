@@ -1,0 +1,110 @@
+@import "../../styles/colors.scss";
+
+.header {
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.contact_card {
+  background: $color_primary;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  .contact_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    .contact_link {
+      cursor: pointer;
+      background: $color_secondary;
+      margin: 0.5rem;
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      font-family: "Bebas Neue", cursive;
+      border-radius: 1rem;
+      padding: 0.25rem;
+      transition: 100ms ease-in;
+
+      &:hover {
+        background: white;
+      }
+    }
+  }
+}
+
+// Modal -----------------------------------------------------------------
+
+.chat_modal {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 25%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  .modal_options {
+    background: $color_primary;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 0.25rem;
+    position: relative;
+
+    .modal_online_icon {
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      background: green;
+      top: -0.25rem;
+      left: -0.25rem;
+      border: 1px solid $color_secondary;
+      border-radius: 50%;
+    }
+
+    div {
+      &:hover {
+        color: $color_secondary;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal_text_screen {
+    height: 20rem;
+    padding: 0.25rem;
+
+    .modal_text {
+      font-size: 16px;
+    }
+  }
+  .modal_text_form {
+    padding: 0.25rem;
+    display: flex;
+
+    input {
+      padding: 0.25rem;
+      font-size: 16px;
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      background: whitesmoke;
+    }
+
+    button {
+      padding: 0;
+      padding: 0.25rem;
+      border: none;
+      border-bottom-right-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      background: whitesmoke;
+    }
+  }
+}
