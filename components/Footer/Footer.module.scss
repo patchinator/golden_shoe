@@ -1,0 +1,14 @@
+@import "../../styles/colors.scss";
+.footer {
+  background: $color_footer;
+
+  .social_media {
+    background: rgb(143, 143, 255);
+  }
+
+  .column_wrapper {
+    display: grid;
+    margin: 0 1rem 0 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
