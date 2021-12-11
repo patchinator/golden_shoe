@@ -4,6 +4,7 @@ import Head from "next/head";
 import Navbar from "../components/Header/Navbar";
 import ProductCard from "../components/ProductCard";
 import Carousel from "../components/Carousel";
+import Footer from "../components/Footer/Footer";
 
 // card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
@@ -54,6 +55,7 @@ export default function Home() {
         image={womensBootsImage}
         price="59.99"
       />
+      <Footer />
     </div>
   );
 }
