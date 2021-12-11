@@ -23,7 +23,10 @@ const ContactUs = () => {
         <div className={style.chat_modal}>
           <div className={style.modal_options}>
             <div className={style.modal_online_icon}></div>
-            <div onClick={closeChatModalHandler}>
+            <div
+              className={style.modal_close_icon}
+              onClick={closeChatModalHandler}
+            >
               <FontAwesomeIcon icon={faTimes} />
             </div>
           </div>
