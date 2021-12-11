@@ -1,3 +1,5 @@
+@import "../../styles/colors.scss";
+
 .card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   margin: 1rem;
@@ -11,5 +13,20 @@
 
   .card_links {
     padding: 0.5rem;
+
+    div {
+      padding: 0.25rem;
+      cursor: pointer;
+      transition: 100ms ease-in;
+
+      &:hover {
+        color: $color_primary;
+        transform: scale(1.01);
+      }
+    }
+
+    .expand {
+      font-weight: bold;
+    }
   }
 }
