@@ -4,7 +4,6 @@ import {
   faFacebook,
   faTwitter,
   faInstagram,
-  faSnapchat,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -23,9 +22,6 @@ const Footer = () => {
         <div className={style.media_icon_instagram}>
           <FontAwesomeIcon icon={faInstagram} />
         </div>
-        <div className={style.media_icon_snapchat}>
-          <FontAwesomeIcon icon={faSnapchat} />
-        </div>
       </div>
       <div className={style.column_wrapper}>
         <div className={style.columns}>
@@ -38,7 +34,7 @@ const Footer = () => {
         <div className={style.columns}>
           <div className={style.column_header}>About Golden Shoe</div>
           <div className={style.link}>About us</div>
-          <div className={style.link}>Careers at Golden Shoe</div>
+          <div className={style.link}>Careers @ Golden Shoe</div>
           <div className={style.link}>Cyber Security</div>
         </div>
         <div className={style.columns}>
