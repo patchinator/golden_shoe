@@ -1,0 +1,15 @@
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+
+  .card_header {
+    font-size: 20px;
+    padding: 0.5rem;
+    font-family: "Bebas Neue", cursive;
+    margin: 0;
+  }
+
+  .card_links {
+    padding: 0.5rem;
+  }
+}

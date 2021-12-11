@@ -1,4 +1,4 @@
-import ContactCard from "../components/Contact/ContactCard";
+import ContactCards from "../components/Contact/ContactCards";
 import ContactInfo from "../components/Contact/ContactInfo";
 import Navbar from "../components/Navbar";
 import style from "./contact.module.scss";
@@ -9,7 +9,7 @@ const ContactPage = () => {
       <Navbar />
       <section className={style.container}>
         <ContactInfo />
-        <ContactCard />
+        <ContactCards />
       </section>
     </section>
   );

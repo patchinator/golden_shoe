@@ -3,7 +3,11 @@ import ContactCard from "./ContactCard";
 
 const ContactCards = () => {
   return (
-    <div>
+    <div className={style.cards_container}>
+      <ContactCard />
+      <ContactCard />
+      <ContactCard />
+      <ContactCard />
       <ContactCard />
       <ContactCard />
     </div>
