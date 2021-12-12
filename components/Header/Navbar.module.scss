@@ -2,115 +2,157 @@
 @import "../../styles/colors.scss";
 
 .navbar {
-  width: 100vw;
-  background-color: $color_primary;
   display: flex;
-  align-items: center;
-  padding-left: 0.5rem;
+  flex-direction: column;
   color: $color_secondary;
-  position: relative;
-  z-index: 1;
 
-  .men,
-  .women,
-  .kids {
+  .navbar_top {
+    width: 100vw;
+    background-color: $color_primary;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 3.5rem;
-    flex: 10%;
-    font-family: "Bebas Neue", cursive;
-    font-size: 22px;
-  }
+    padding-left: 0.5rem;
+    position: relative;
+    z-index: 1;
 
-  .men {
-    background-color: rgb(235, 70, 70);
-  }
-
-  .women {
-    background-color: blueviolet;
-  }
-
-  .search {
-    flex: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    form {
+    .men,
+    .women,
+    .kids {
       display: flex;
       justify-content: center;
-      width: 100%;
-
-      input {
-        width: 90%;
-        padding: 0.5rem;
-        border: none;
-        outline: none;
-        font-size: 16px;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-      }
-
-      button {
-        padding: 0.5rem;
-        border: none;
-        border-top-right-radius: 1rem;
-        border-bottom-right-radius: 1rem;
-        background: white;
-      }
-    }
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    padding: 0.25rem 0 0.25rem 0;
-    cursor: pointer;
-
-    a {
-      height: 3rem;
-    }
-  }
-
-  .dropdown_button {
-    padding-right: 1rem;
-
-    @media screen and (min-width: $phone) {
-      display: none;
-    }
-
-    .icon {
-      width: 1.75rem;
-      height: 1.75rem;
-    }
-  }
-
-  .dropdown {
-    position: absolute;
-    top: 58px;
-    right: 0;
-    background: rgb(141, 45, 36);
-    width: 50%;
-    border-left: 4px solid $color_primary;
-    border-right: 4px solid $color_primary;
-
-    .option {
-      padding: 0.25rem;
-      font-size: 20px;
-      display: flex;
-      justify-content: space-between;
       align-items: center;
+      height: 3.5rem;
+      flex: 12.5%;
+      font-family: "Bebas Neue", cursive;
+      font-size: 22px;
+      border-left: 1px solid;
+      transition: 80ms ease-in;
       cursor: pointer;
-      transition: 120ms ease-in;
-      border-top: 1px solid rgb(241, 236, 216);
-    }
-    .icon {
-      width: 2rem;
+
+      &:hover {
+        background: $color_secondary;
+        color: $color_primary;
+      }
     }
 
-    p {
-      padding-right: 0.25rem;
+    .kids {
+      border-right: 1px solid;
     }
+
+    .search {
+      flex: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0.5rem 0 0.5rem;
+
+      form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        input {
+          width: 90%;
+          padding: 0.5rem;
+          border: none;
+          outline: none;
+          font-size: 16px;
+          border-top-left-radius: 1rem;
+          border-bottom-left-radius: 1rem;
+        }
+
+        button {
+          padding: 0.5rem;
+          border: none;
+          border-top-right-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+          background: white;
+        }
+      }
+    }
+
+    .desktop_icons {
+      flex: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      div {
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        height: 3.5rem;
+        transition: 80ms ease-in;
+        margin: 0 0.25rem 0 0.25rem;
+
+        &:hover {
+          background: $color_secondary;
+          color: $color_primary;
+        }
+
+        .icon_user,
+        .icon_bag,
+        .icon_heart {
+          width: 1.45rem;
+        }
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      padding: 0.25rem 0 0.25rem 0;
+      cursor: pointer;
+      margin-right: 0.3rem;
+
+      a {
+        height: 3rem;
+      }
+    }
+
+    .dropdown_button {
+      padding-right: 1rem;
+
+      @media screen and (min-width: $phone) {
+        display: none;
+      }
+
+      .icon {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 58px;
+      right: 0;
+      background: rgb(141, 45, 36);
+      width: 50%;
+      border-left: 4px solid $color_primary;
+      border-right: 4px solid $color_primary;
+
+      .option {
+        padding: 0.25rem;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: 120ms ease-in;
+        border-top: 1px solid rgb(241, 236, 216);
+      }
+      .icon {
+        width: 2rem;
+      }
+
+      p {
+        padding-right: 0.25rem;
+      }
+    }
+  }
+
+  .navbar_bottom {
+    background: $color_primary_two;
   }
 }
