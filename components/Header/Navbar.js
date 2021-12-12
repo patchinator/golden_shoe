@@ -17,6 +17,7 @@ import {
   faBookOpen,
   faBars,
   faArrowDown,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -58,6 +59,24 @@ const Navbar = () => {
             />
           </a>
         </Link>
+      </div>
+
+      <div className={style.men}>
+        <p>Men</p>
+      </div>
+      <div className={style.women}>
+        <p>Women</p>
+      </div>
+      <div className={style.kids}>
+        <p>Kids</p>
+      </div>
+      <div className={style.search}>
+        <form>
+          <input type="text" />
+          <button>
+            <FontAwesomeIcon width="1rem" icon={faSearch} />
+          </button>
+        </form>
       </div>
 
       <div className={style.dropdown_button} onClick={dropdownHandler}>

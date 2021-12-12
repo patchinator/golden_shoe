@@ -6,11 +6,61 @@
   background-color: $color_primary;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-left: 0.5rem;
   color: $color_secondary;
   position: relative;
   z-index: 1;
+
+  .men,
+  .women,
+  .kids {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    flex: 10%;
+    font-family: "Bebas Neue", cursive;
+    font-size: 22px;
+  }
+
+  .men {
+    background-color: rgb(235, 70, 70);
+  }
+
+  .women {
+    background-color: blueviolet;
+  }
+
+  .search {
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      input {
+        width: 90%;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+      }
+
+      button {
+        padding: 0.5rem;
+        border: none;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background: white;
+      }
+    }
+  }
 
   .logo {
     display: flex;
@@ -25,6 +75,10 @@
 
   .dropdown_button {
     padding-right: 1rem;
+
+    @media screen and (min-width: $phone) {
+      display: none;
+    }
 
     .icon {
       width: 1.75rem;
