@@ -10,9 +10,11 @@
 
   .image_text_card {
     position: absolute;
-    top: 10%;
-    right: 1.5rem;
-    font-family: "Gwendolyn", cursive;
+    top: 1rem;
+    right: 50%;
+    transform: translate(50%, 0);
+    color: white;
+    font-family: "Bebas Neue", cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,5 +27,6 @@
     right: 50%;
     transform: translate(50%, 0);
     font-size: 0.8vw;
+    color: white;
   }
 }
