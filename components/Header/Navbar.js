@@ -24,10 +24,30 @@ import {
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
   const dropdownRef = useRef(null);
 
   const dropdownHandler = () => {
     setShowDropdown((prev) => !prev);
+  };
+
+  // const navbarControl = () => {
+  //   if (window.scrollY > 100) {
+  //     setShowNavbar(false);
+  //   } else {
+  //     setShowNavbar(true);
+  //   }
+  // };
+
+  const navbarControl = () => {
+    let scrollPos = 0;
+    // detects new state and compares it with the new one
+    if (document.body.getBoundingClientRect().top > scrollPos) {
+      setShowNavbar(false);
+    } else {
+      setShowNavbar(true);
+      scrollPos = document.body.getBoundingClientRect().top;
+    }
   };
 
   useEffect(() => {
@@ -42,14 +62,19 @@ const Navbar = () => {
     };
 
     document.addEventListener("click", clickOutsideHandler);
+    window.addEventListener("scroll", navbarControl);
 
     return () => {
       document.removeEventListener("click", clickOutsideHandler);
+      window.removeEventListener("scroll", navbarControl);
     };
-  }, [showDropdown]);
+  }, []);
 
   return (
-    <nav ref={dropdownRef} className={style.navbar}>
+    <nav
+      ref={dropdownRef}
+      className={`${style.navbar} ${showNavbar && style.hidden}`}
+    >
       <div className={style.navbar_top}>
         <div className={style.logo}>
           <Link href="/" passHref>

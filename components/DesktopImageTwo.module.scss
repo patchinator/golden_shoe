@@ -3,6 +3,7 @@
 .image {
   position: relative;
   margin: -0.3rem;
+  cursor: default;
 
   @media screen and (max-width: $phone) {
     display: none;
