@@ -31,14 +31,6 @@ const Navbar = () => {
     setShowDropdown((prev) => !prev);
   };
 
-  // const navbarControl = () => {
-  //   if (window.scrollY > 100) {
-  //     setShowNavbar(false);
-  //   } else {
-  //     setShowNavbar(true);
-  //   }
-  // };
-
   const navbarControl = () => {
     let scrollPos = 0;
     // detects new state and compares it with the new one
@@ -68,13 +60,10 @@ const Navbar = () => {
       document.removeEventListener("click", clickOutsideHandler);
       window.removeEventListener("scroll", navbarControl);
     };
-  }, []);
+  }, [showDropdown]);
 
   return (
-    <nav
-      ref={dropdownRef}
-      className={`${style.navbar} ${showNavbar && style.hidden}`}
-    >
+    <nav ref={dropdownRef} className={style.navbar}>
       <div className={style.navbar_top}>
         <div className={style.logo}>
           <Link href="/" passHref>
