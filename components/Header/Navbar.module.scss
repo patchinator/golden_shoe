@@ -15,9 +15,17 @@
     position: relative;
     z-index: 1;
 
+    @media screen and (max-width: $phone) {
+      justify-content: space-between;
+    }
+
     .men,
     .women,
     .kids {
+      @media screen and (max-width: $phone) {
+        display: none;
+      }
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,6 +54,10 @@
       align-items: center;
       margin: 0 0.5rem 0 0.5rem;
 
+      @media screen and (max-width: $phone) {
+        display: none;
+      }
+
       form {
         display: flex;
         justify-content: center;
@@ -67,6 +79,10 @@
           border-top-right-radius: 1rem;
           border-bottom-right-radius: 1rem;
           background: white;
+
+          &:hover {
+            color: $color_primary_two;
+          }
         }
       }
     }
@@ -76,6 +92,10 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
+      @media screen and (max-width: $phone) {
+        display: none;
+      }
 
       div {
         width: 2rem;
@@ -125,7 +145,7 @@
 
     .dropdown {
       position: absolute;
-      top: 58px;
+      top: 56px;
       right: 0;
       background: rgb(141, 45, 36);
       width: 50%;
@@ -153,6 +173,10 @@
   }
 
   .navbar_bottom {
+    @media screen and (max-width: $phone) {
+      display: none;
+    }
+
     background: $color_primary_two;
     display: flex;
     justify-content: center;

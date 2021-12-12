@@ -141,6 +141,9 @@ const Navbar = () => {
 
       <div className={style.navbar_bottom}>
         <div>help</div>
+        <div>
+          <Link href="/contact">contact</Link>
+        </div>
         <div>exchanges & returns</div>
         <div>order tracker</div>
         <div>gift cards</div>
