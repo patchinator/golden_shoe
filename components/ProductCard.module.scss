@@ -4,6 +4,10 @@
 .card {
   margin-bottom: 0.5rem;
 
+  @media screen and (min-width: $phone) {
+    display: none;
+  }
+
   .image {
     width: 600px;
     height: 20%;
