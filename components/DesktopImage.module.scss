@@ -1,0 +1,28 @@
+@import "../styles/media.scss";
+
+.image {
+  position: relative;
+
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
+
+  .image_text_card {
+    position: absolute;
+    top: 10%;
+    right: 1.5rem;
+    font-family: "Gwendolyn", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vw;
+  }
+
+  .image_text_disclaimer {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 50%;
+    transform: translate(50%, 0);
+    font-size: 0.8vw;
+  }
+}

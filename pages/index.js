@@ -5,6 +5,7 @@ import Navbar from "../components/Header/Navbar";
 import ProductCard from "../components/ProductCard";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer/Footer";
+import DesktopImage from "../components/DesktopImage";
 
 // card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
@@ -26,6 +27,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      {/* desktop --------------------------------------------------------- desktop */}
+      <DesktopImage image={desktopBooksImage} alt="Womens Shoes" />
+      {/* mobile ---------------------------------------------------------- mobile */}
       <Carousel
         imageOne={carouselImageOne}
         imageOneAlt="Doc Martens"
