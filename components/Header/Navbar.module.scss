@@ -154,5 +154,18 @@
 
   .navbar_bottom {
     background: $color_primary_two;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+
+    div {
+      margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+      cursor: pointer;
+      transition: 80ms ease-in;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 }

@@ -140,7 +140,12 @@ const Navbar = () => {
       </div>
 
       <div className={style.navbar_bottom}>
-        <div>test</div>
+        <div>help</div>
+        <div>exchanges & returns</div>
+        <div>order tracker</div>
+        <div>gift cards</div>
+        <div>student discount</div>
+        <div>log in / sign up</div>
       </div>
     </nav>
   );
