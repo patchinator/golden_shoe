@@ -66,6 +66,10 @@
       font-size: 12px;
       cursor: pointer;
 
+      &:hover {
+        color: grey;
+      }
+
       @media screen and (max-width: $phone) {
         font-size: 14px;
         margin-bottom: 1rem;
