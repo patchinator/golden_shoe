@@ -3,15 +3,17 @@ import Head from "next/head";
 // components
 import Navbar from "../components/Header/Navbar";
 import ProductCard from "../components/ProductCard";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/UI/Carousel";
 import Footer from "../components/Footer/Footer";
 import DesktopImage from "../components/DesktopImage";
+import DesktopImageTwo from "../components/DesktopImageTwo";
 
 // card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
 import trainersImage from "../assets/trainers.jpg";
 import womensBootsImage from "../assets/womens_boots.jpg";
-import desktopBooksImage from "../assets/desktop_image_one.jpg";
+import desktopWomensBootsImage from "../assets/desktop_image_one.jpg";
+import desktopMensBootsImage from "../assets/desktop_image_two.jpg";
 
 // carousel images
 import carouselImageOne from "../assets/womens_boots_2.jpg";
@@ -28,7 +30,8 @@ export default function Home() {
       </Head>
       <Navbar />
       {/* desktop --------------------------------------------------------- desktop */}
-      <DesktopImage image={desktopBooksImage} alt="Womens Shoes" />
+      <DesktopImage image={desktopWomensBootsImage} alt="Womens Shoes" />
+      <DesktopImageTwo image={desktopMensBootsImage} alt="Mens Boots" />
       {/* mobile ---------------------------------------------------------- mobile */}
       <Carousel
         imageOne={carouselImageOne}
