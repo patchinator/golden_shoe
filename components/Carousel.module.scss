@@ -1,0 +1,77 @@
+@import "./../styles/media.scss";
+@import "./../styles/colors.scss";
+
+.carousel {
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+  margin-bottom: 0.5rem;
+
+  .button_prev,
+  .button_next {
+    color: $color_primary;
+    border: none;
+    background: none;
+    position: absolute;
+    transition: 100ms ease-in;
+    top: 50%;
+
+    &:hover {
+      color: $color_secondary;
+    }
+  }
+
+  .button_next {
+    right: 0.25rem;
+  }
+
+  .button_prev {
+    left: 0.25rem;
+  }
+
+  @media screen and (max-width: $phone) {
+    width: 100%;
+  }
+
+  .carousel_container {
+    display: flex;
+
+    .carousel_image_one,
+    .carousel_image_two,
+    .carousel_image_three {
+      position: relative;
+      flex: 0 0 100%;
+    }
+
+    .image_one_desc,
+    .image_two_desc,
+    .image_three_desc {
+      position: absolute;
+      margin: 0;
+    }
+
+    .image_one_desc {
+      font-family: "Bebas Neue", cursive;
+      font-size: 40px;
+      top: 0.5rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      color: whitesmoke;
+    }
+
+    .image_two_desc {
+      top: 0;
+      right: 1.25rem;
+      font-family: "Gwendolyn", cursive;
+      font-size: 40px;
+    }
+
+    .image_three_desc {
+      font-size: 40px;
+      font-family: "Lobster Two", cursive;
+      top: 4rem;
+      left: 4rem;
+      color: white;
+    }
+  }
+}
