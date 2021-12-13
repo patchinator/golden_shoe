@@ -1,0 +1,52 @@
+@import "../../styles/colors.scss";
+
+.contact_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $color_primary;
+  margin-bottom: 1rem;
+
+  .contact_search {
+    .contact_title {
+      font-size: 40px;
+      font-family: "Bebas Neue", cursive;
+      color: $color_secondary;
+      text-align: center;
+      margin: 1rem 0 1rem 0;
+    }
+
+    .contact_form {
+      display: flex;
+      margin-bottom: 1rem;
+
+      input {
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        font-size: 16px;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border: none;
+        outline: none;
+
+        &:focus::placeholder {
+          color: transparent;
+        }
+      }
+
+      button {
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border: none;
+        padding: 0.75rem;
+        background: white;
+        transition: 100ms ease-in;
+
+        &:hover {
+          color: $color_primary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
