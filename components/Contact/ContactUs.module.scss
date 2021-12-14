@@ -66,6 +66,10 @@
       border-radius: 50%;
     }
 
+    .modal_close_icon {
+      width: 1rem;
+    }
+
     div {
       &:hover {
         color: $color_secondary;
