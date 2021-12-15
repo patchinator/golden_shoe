@@ -19,6 +19,7 @@ import desktopMensBootsImage from "../assets/desktop_image_two.jpg";
 import carouselImageOne from "../assets/womens_boots_2.jpg";
 import carouselImageTwo from "../assets/womens_shoes_2.jpg";
 import carouselImageThree from "../assets/fancy_shoes.jpg";
+import Promotion from "../components/UI/Promotion";
 
 export default function Home() {
   return (
@@ -32,6 +33,10 @@ export default function Home() {
       {/* desktop --------------------------------------------------------- desktop */}
       <DesktopImage image={desktopWomensBootsImage} alt="Womens Shoes" />
       <DesktopImageTwo image={desktopMensBootsImage} alt="Mens Boots" />
+      <Promotion
+        text="10% Student Discount across the whole store"
+        text_two="Click for more details"
+      />
       {/* mobile ---------------------------------------------------------- mobile */}
       <Carousel
         imageOne={carouselImageOne}
