@@ -1,5 +1,8 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/media.scss";
+
 .button {
-  background: none;
+  background: $color_footer;
   padding: 0.75rem;
   font-family: inherit;
   font-size: 1.3vw;
@@ -11,5 +14,10 @@
 
   &:hover {
     background: white;
+  }
+
+  @media screen and (max-width: $phone) {
+    font-size: 3.8vw;
+    padding: 1rem;
   }
 }

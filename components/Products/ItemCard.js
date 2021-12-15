@@ -80,7 +80,9 @@ const ItemCard = () => {
       </div>
       <div className={style.info}>
         <div className={style.title}>Timberland Boots in Brown</div>
-        <div className={style.price}>£89.95</div>
+        <div className={style.price}>
+          <strong>£</strong>89.95
+        </div>
         <div className={style.installment}>
           Or 3 payments of 29.98 interest free
         </div>
@@ -97,6 +99,7 @@ const ItemCard = () => {
           </div>
         </div>
         <div className={style.size}>
+          <div className={style.size_header}>Size</div>
           <select name="shoe_size" id="shoe_size">
             <option>Please Select</option>
             {DUMMY_DATA.map((data) => (
@@ -116,6 +119,19 @@ const ItemCard = () => {
           <div className={style.purchase}>
             <CTAButton>Purchase</CTAButton>
           </div>
+        </div>
+        <div>
+          <div>
+            Christmas shopping? Check our delivery guidelines so that you can
+            ensure it arrives before the 25th.
+          </div>
+        </div>
+        <div className={style.shipping}>
+          <div className={style.shipping_info_one}>
+            Need it quick? Select one of our Fast Delivery options at checkout.
+          </div>
+          <div className={style.shipping_info_two}>Free returns</div>
+          <div className={style.shipping_info_three}>T&C's apply</div>
         </div>
       </div>
     </div>

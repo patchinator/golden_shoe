@@ -5,6 +5,15 @@
   margin: 1rem 15% 1rem 15%;
   display: flex;
 
+  @media screen and (max-width: $tablet) {
+    margin: 1rem 5% 1rem 5%;
+  }
+
+  @media screen and (max-width: $phone) {
+    margin: unset;
+    flex-direction: column;
+  }
+
   .image {
     flex: 60%;
     position: relative;
@@ -12,13 +21,16 @@
     .button_left,
     .button_right {
       position: absolute;
-      width: 3rem;
-      height: 3rem;
+      width: 2rem;
+      height: 2rem;
       color: $color_secondary;
       background: none;
       border: 1px solid white;
       border-radius: 50%;
       transition: 80ms ease-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
 
       &:hover {
@@ -40,17 +52,31 @@
 
   .info {
     flex: 40%;
-    background: grey;
+    // background: grey;
     margin-left: 1rem;
 
+    @media screen and (max-width: $phone) {
+      margin: 1rem;
+    }
+
     .title {
-      font-size: 3vw;
+      font-size: 2.8vw;
       margin-bottom: 1rem;
+      font-weight: bolder;
+
+      @media screen and (max-width: $phone) {
+        font-size: 5vw;
+      }
     }
 
     .price {
-      font-size: 1.8vw;
+      font-size: 2vw;
       margin-bottom: 0.5rem;
+      border-bottom: 1px solid black;
+
+      @media screen and (max-width: $phone) {
+        font-size: 4vw;
+      }
     }
 
     .discount {
@@ -71,16 +97,30 @@
     }
 
     .color {
-      font-size: 2.5vw;
-      margin-bottom: 1rem;
+      font-size: 2vw;
+      margin-bottom: 4rem;
+
+      @media screen and (max-width: $phone) {
+        font-size: 4vw;
+        margin-bottom: 5rem;
+      }
     }
 
     .size {
       margin-bottom: 1rem;
 
+      .size_header {
+        margin-bottom: 0.5rem;
+      }
+
       select {
         padding: 0.5rem;
         outline: none;
+        width: 100%;
+
+        @media screen and (max-width: $phone) {
+          font-size: 20px;
+        }
 
         .no_stock {
           color: grey;
@@ -90,13 +130,31 @@
 
     .buttons {
       display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 1rem;
+    }
 
-      .conversion {
-        flex: 70%;
+    .shipping {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      padding: 0.5rem;
+      margin: 1rem;
+      font-size: 12px;
+      font-weight: bold;
+
+      .shipping_info_one,
+      .shipping_info_two {
+        margin-bottom: 0.5rem;
       }
 
-      .purchase {
-        flex: 30%;
+      .shipping_info_three {
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+          color: grey;
+        }
       }
     }
   }
