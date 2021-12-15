@@ -2,7 +2,7 @@
 @import "../../styles/media.scss";
 
 .container {
-  margin: 1rem;
+  margin: 1rem 15% 1rem 15%;
   display: flex;
 
   .image {
@@ -76,6 +76,8 @@
     }
 
     .size {
+      margin-bottom: 1rem;
+
       select {
         padding: 0.5rem;
         outline: none;
@@ -83,6 +85,18 @@
         .no_stock {
           color: grey;
         }
+      }
+    }
+
+    .buttons {
+      display: flex;
+
+      .conversion {
+        flex: 70%;
+      }
+
+      .purchase {
+        flex: 30%;
       }
     }
   }

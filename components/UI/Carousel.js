@@ -2,7 +2,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import style from "./Carousel.module.scss";
 import Image from "next/image";
 import { useCallback } from "react";
-import { CarouselNextButton, CarouselPrevButton } from "./CarouselButtons";
+import {
+  CarouselNextButton,
+  CarouselPrevButton,
+} from "./Buttons/CarouselButtons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 

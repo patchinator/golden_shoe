@@ -3,6 +3,7 @@
 .image {
   position: relative;
   cursor: default;
+  margin-bottom: -0.3rem;
 
   @media screen and (max-width: $phone) {
     display: none;
@@ -25,5 +26,13 @@
     right: 50%;
     transform: translate(50%, 0);
     font-size: 0.8vw;
+    text-align: center;
+  }
+
+  .button {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    // transform: translate(50%, 0);
   }
 }

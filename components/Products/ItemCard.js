@@ -1,15 +1,25 @@
-import style from "./ItemCard.module.scss";
-
+import { useState } from "react";
 import Image from "next/image";
+
+// style + images
+import style from "./ItemCard.module.scss";
 import timberlandBootsImage from "../../assets/timberland_boots.jpg";
-import { CarouselNextButton, CarouselPrevButton } from "../UI/CarouselButtons";
+
+// local imports
+import {
+  CarouselNextButton,
+  CarouselPrevButton,
+} from "../UI/Buttons/CarouselButtons";
+import CTAButton from "../UI/Buttons/CTAButton";
+import InfoButton from "../UI/Buttons/InfoButton";
+
+// fonts
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
   faArrowRight,
   faTag,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 
 const DUMMY_DATA = [
   {
@@ -88,20 +98,24 @@ const ItemCard = () => {
         </div>
         <div className={style.size}>
           <select name="shoe_size" id="shoe_size">
+            <option>Please Select</option>
             {DUMMY_DATA.map((data) => (
               <option
                 className={`${data.stock === 0 && style.no_stock}`}
                 key={data.key}
               >
-                Size {data.size} ({data.stock > 1 ? "in stock" : "out of stock"}
-                )
+                UK {data.size} ({data.stock > 1 ? "in stock" : "out of stock"})
               </option>
             ))}
           </select>
         </div>
         <div className={style.buttons}>
-          <button>Size conversion</button>
-          <button>Purchse</button>
+          <div className={style.conversion}>
+            <InfoButton>size conversion guide</InfoButton>
+          </div>
+          <div className={style.purchase}>
+            <CTAButton>Purchase</CTAButton>
+          </div>
         </div>
       </div>
     </div>
