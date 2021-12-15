@@ -95,7 +95,7 @@ const ItemCard = () => {
         </div>
         <div className={style.color}>
           <div>
-            <strong>Color:</strong> Brown
+            <strong>Colour:</strong> Brown
           </div>
         </div>
         <div className={style.size}>
@@ -117,7 +117,7 @@ const ItemCard = () => {
             <InfoButton>size conversion guide</InfoButton>
           </div>
           <div className={style.purchase}>
-            <CTAButton>Purchase</CTAButton>
+            <CTAButton>purchase</CTAButton>
           </div>
         </div>
         <div>
