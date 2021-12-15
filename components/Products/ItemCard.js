@@ -9,8 +9,54 @@ import {
   faArrowRight,
   faTag,
 } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+
+const DUMMY_DATA = [
+  {
+    size: 6,
+    stock: 5,
+    key: "eg1",
+  },
+  {
+    size: 7,
+    stock: 0,
+    key: "eg2",
+  },
+  {
+    size: 8,
+    stock: 11,
+    key: "eg3",
+  },
+  {
+    size: 9,
+    stock: 4,
+    key: "eg4",
+  },
+  {
+    size: 10,
+    stock: 0,
+    key: "eg5",
+  },
+  {
+    size: 11,
+    stock: 0,
+    key: "eg6",
+  },
+  {
+    size: 12,
+    stock: 12,
+    key: "eg7",
+  },
+  {
+    size: 13,
+    stock: 3,
+    key: "eg8",
+  },
+];
 
 const ItemCard = () => {
+  const [inStock, setInStock] = useState(true);
+
   return (
     <div className={style.container}>
       <div className={style.image}>
@@ -42,14 +88,15 @@ const ItemCard = () => {
         </div>
         <div className={style.size}>
           <select name="shoe_size" id="shoe_size">
-            <option value="sm">UK Size 6</option>
-            <option value="md">UK Size 7</option>
-            <option value="lg">UK Size 8</option>
-            <option value="lg">UK Size 9</option>
-            <option value="lg">UK Size 10</option>
-            <option value="lg">UK Size 11</option>
-            <option value="lg">UK Size 12</option>
-            <option value="lg">UK Size 12</option>
+            {DUMMY_DATA.map((data) => (
+              <option
+                className={`${data.stock === 0 && style.no_stock}`}
+                key={data.key}
+              >
+                Size {data.size} ({data.stock > 1 ? "in stock" : "out of stock"}
+                )
+              </option>
+            ))}
           </select>
         </div>
         <div className={style.buttons}>

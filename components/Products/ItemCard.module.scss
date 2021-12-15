@@ -72,6 +72,18 @@
 
     .color {
       font-size: 2.5vw;
+      margin-bottom: 1rem;
+    }
+
+    .size {
+      select {
+        padding: 0.5rem;
+        outline: none;
+
+        .no_stock {
+          color: grey;
+        }
+      }
     }
   }
 }
