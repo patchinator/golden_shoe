@@ -1,11 +1,14 @@
-@import "./../styles/media.scss";
-@import "./../styles/colors.scss";
+@import "./../../styles/media.scss";
+@import "./../../styles/colors.scss";
 
 .carousel {
   overflow: hidden;
-  width: 50%;
   position: relative;
   margin-bottom: 0.5rem;
+
+  @media screen and (min-width: $phone) {
+    display: none;
+  }
 
   .button_prev,
   .button_next {
@@ -29,10 +32,6 @@
     left: 0.25rem;
   }
 
-  @media screen and (max-width: $phone) {
-    width: 100%;
-  }
-
   .carousel_container {
     display: flex;
 
@@ -48,11 +47,11 @@
     .image_three_desc {
       position: absolute;
       margin: 0;
+      font-size: 6.5vw;
     }
 
     .image_one_desc {
       font-family: "Bebas Neue", cursive;
-      font-size: 40px;
       top: 0.5rem;
       left: 50%;
       transform: translate(-50%, 0);
@@ -63,11 +62,9 @@
       top: 0;
       right: 1.25rem;
       font-family: "Gwendolyn", cursive;
-      font-size: 40px;
     }
 
     .image_three_desc {
-      font-size: 40px;
       font-family: "Lobster Two", cursive;
       top: 4rem;
       left: 4rem;

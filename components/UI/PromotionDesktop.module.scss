@@ -1,0 +1,29 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+.promotion {
+  width: 100%;
+  background: $color_primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", cursive;
+  color: $color_secondary;
+  font-size: 4.5vw;
+  cursor: default;
+
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
+
+  .text_small {
+    font-size: 2vw;
+    transition: 100ms ease-in;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+    }
+  }
+}

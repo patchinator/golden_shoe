@@ -1,0 +1,33 @@
+@import "../styles/media.scss";
+
+.image {
+  position: relative;
+  margin: -0.3rem;
+  cursor: default;
+
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
+
+  .image_text_card {
+    position: absolute;
+    top: 1rem;
+    right: 50%;
+    transform: translate(50%, 0);
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vw;
+  }
+
+  .image_text_disclaimer {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 50%;
+    transform: translate(50%, 0);
+    font-size: 0.8vw;
+    color: white;
+  }
+}

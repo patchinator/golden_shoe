@@ -1,12 +1,10 @@
 import useEmblaCarousel from "embla-carousel-react";
 import style from "./Carousel.module.scss";
 import Image from "next/image";
-import { useCallback, useState } from "react";
-import { CarouselNextButton, CarouselPrevButton } from "./UI/CarouselButtons";
+import { useCallback } from "react";
+import { CarouselNextButton, CarouselPrevButton } from "./CarouselButtons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
-// import { useEffect } from "react";
 
 const Carousel = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });

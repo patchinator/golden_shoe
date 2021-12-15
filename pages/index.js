@@ -3,18 +3,24 @@ import Head from "next/head";
 // components
 import Navbar from "../components/Header/Navbar";
 import ProductCard from "../components/ProductCard";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/UI/Carousel";
 import Footer from "../components/Footer/Footer";
+import DesktopImage from "../components/DesktopImage";
+import DesktopImageTwo from "../components/DesktopImageTwo";
+import PromotionDesktop from "../components/UI/PromotionDesktop";
 
 // card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
 import trainersImage from "../assets/trainers.jpg";
 import womensBootsImage from "../assets/womens_boots.jpg";
+import desktopWomensBootsImage from "../assets/desktop_image_one.jpg";
+import desktopMensBootsImage from "../assets/desktop_image_two.jpg";
 
 // carousel images
 import carouselImageOne from "../assets/womens_boots_2.jpg";
 import carouselImageTwo from "../assets/womens_shoes_2.jpg";
 import carouselImageThree from "../assets/fancy_shoes.jpg";
+import Promotion from "../components/UI/Promotion";
 
 export default function Home() {
   return (
@@ -25,6 +31,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      {/* desktop --------------------------------------------------------- desktop */}
+      <DesktopImage image={desktopWomensBootsImage} alt="Womens Shoes" />
+      <DesktopImageTwo image={desktopMensBootsImage} alt="Mens Boots" />
+      <PromotionDesktop
+        text="10% Student Discount across the whole store"
+        text_two="Click for more details"
+      />
+      {/* mobile ---------------------------------------------------------- mobile */}
       <Carousel
         imageOne={carouselImageOne}
         imageOneAlt="Doc Martens"
@@ -41,6 +55,10 @@ export default function Home() {
         text="Fantastic current trends at our lowest prices. Click to find out more."
         image={womensShoesImage}
         price="64.99"
+      />
+      <Promotion
+        text="10% Student Discount across the whole store"
+        text_two="Click for more details"
       />
       <ProductCard
         title="Running Shoes"

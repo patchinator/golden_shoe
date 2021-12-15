@@ -4,6 +4,10 @@
 .card {
   margin-bottom: 0.5rem;
 
+  @media screen and (min-width: $phone) {
+    display: none;
+  }
+
   .image {
     width: 600px;
     height: 20%;
@@ -27,17 +31,17 @@
         font-family: "Bebas Neue", cursive;
         color: white;
         padding: 0.25rem;
-        font-size: 30px;
+        font-size: 6vw;
       }
 
       .info_text {
         padding: 0.25rem;
-        font-size: 16px;
+        font-size: 4vw;
       }
 
       .info_price {
         color: $color_primary;
-        font-size: 20px;
+        font-size: 4vw;
         padding: 0 0.25rem 0.25rem 0;
         display: flex;
         justify-content: flex-end;
