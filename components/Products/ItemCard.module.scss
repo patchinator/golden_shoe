@@ -1,0 +1,77 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+.container {
+  margin: 1rem;
+  display: flex;
+
+  .image {
+    flex: 60%;
+    position: relative;
+
+    .button_left,
+    .button_right {
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      color: $color_secondary;
+      background: none;
+      border: 1px solid white;
+      border-radius: 50%;
+      transition: 80ms ease-in;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background: rgba($color: white, $alpha: 0.1);
+      }
+    }
+
+    .button_left {
+      top: 50%;
+      left: 1rem;
+    }
+
+    .button_right {
+      top: 50%;
+      right: 1rem;
+    }
+  }
+
+  .info {
+    flex: 40%;
+    background: grey;
+    margin-left: 1rem;
+
+    .title {
+      font-size: 3vw;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-size: 1.8vw;
+      margin-bottom: 0.5rem;
+    }
+
+    .discount {
+      display: flex;
+      background: $color_secondary;
+      padding: 0.5rem;
+      margin: 1rem;
+
+      .discount_icon {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+        color: $color_primary;
+      }
+
+      .discount_text {
+        flex: 80%;
+      }
+    }
+
+    .color {
+      font-size: 2.5vw;
+    }
+  }
+}

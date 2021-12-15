@@ -1,11 +1,12 @@
 import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer/Footer";
+import ItemCard from "../../components/Products/ItemCard";
 
 const TimberlandBoots = () => {
   return (
     <div>
       <Navbar />
-      <div>This is the timberland boots product page</div>
+      <ItemCard />
       <Footer />
     </div>
   );
