@@ -7,6 +7,7 @@ import Carousel from "../components/UI/Carousel";
 import Footer from "../components/Footer/Footer";
 import DesktopImage from "../components/DesktopImage";
 import DesktopImageTwo from "../components/DesktopImageTwo";
+import PromotionDesktop from "../components/UI/PromotionDesktop";
 
 // card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
@@ -33,7 +34,7 @@ export default function Home() {
       {/* desktop --------------------------------------------------------- desktop */}
       <DesktopImage image={desktopWomensBootsImage} alt="Womens Shoes" />
       <DesktopImageTwo image={desktopMensBootsImage} alt="Mens Boots" />
-      <Promotion
+      <PromotionDesktop
         text="10% Student Discount across the whole store"
         text_two="Click for more details"
       />
@@ -54,6 +55,10 @@ export default function Home() {
         text="Fantastic current trends at our lowest prices. Click to find out more."
         image={womensShoesImage}
         price="64.99"
+      />
+      <Promotion
+        text="10% Student Discount across the whole store"
+        text_two="Click for more details"
       />
       <ProductCard
         title="Running Shoes"
