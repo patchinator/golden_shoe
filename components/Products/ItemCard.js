@@ -14,7 +14,7 @@ import { useState } from "react";
 const DUMMY_DATA = [
   {
     size: 6,
-    stock: 5,
+    stock: 6,
     key: "eg1",
   },
   {
