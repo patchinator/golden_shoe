@@ -129,7 +129,7 @@ const Navbar = () => {
                 <FontAwesomeIcon className={style.icon} icon={faHome} />
               </div>
             </Link>
-            <Link href="/products" passHref>
+            <Link href="/mens/timberland-boots" passHref>
               <div className={style.option}>
                 <p>Products</p>
                 <FontAwesomeIcon className={style.icon} icon={faShoePrints} />

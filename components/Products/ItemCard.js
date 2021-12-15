@@ -64,9 +64,7 @@ const DUMMY_DATA = [
   },
 ];
 
-const ItemCard = () => {
-  const [inStock, setInStock] = useState(true);
-
+const ItemCard = (props) => {
   return (
     <div className={style.container}>
       <div className={style.image}>
@@ -114,7 +112,9 @@ const ItemCard = () => {
         </div>
         <div className={style.buttons}>
           <div className={style.conversion}>
-            <InfoButton>size conversion guide</InfoButton>
+            <InfoButton onClick={props.showModal}>
+              size conversion guide
+            </InfoButton>
           </div>
           <div className={style.purchase}>
             <CTAButton>purchase</CTAButton>

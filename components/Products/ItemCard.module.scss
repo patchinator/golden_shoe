@@ -4,6 +4,7 @@
 .container {
   margin: 1rem 15% 1rem 15%;
   display: flex;
+  position: relative;
 
   @media screen and (max-width: $tablet) {
     margin: 1rem 5% 1rem 5%;
