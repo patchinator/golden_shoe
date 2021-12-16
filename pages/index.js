@@ -3,11 +3,11 @@ import Head from "next/head";
 // components
 import Navbar from "../components/Header/Navbar";
 import ProductCard from "../components/ProductCard";
-import Carousel from "../components/UI/Carousel";
+import Carousel from "../components/UI/Carousels/Carousel";
 import Footer from "../components/Footer/Footer";
 import DesktopImage from "../components/DesktopImage";
 import DesktopImageTwo from "../components/DesktopImageTwo";
-import PromotionDesktop from "../components/UI/PromotionDesktop";
+import PromotionDesktop from "../components/UI/Promotions/PromotionDesktop";
 
 // card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
@@ -20,7 +20,7 @@ import desktopMensBootsImage from "../assets/desktop_image_two.jpg";
 import carouselImageOne from "../assets/womens_boots_2.jpg";
 import carouselImageTwo from "../assets/womens_shoes_2.jpg";
 import carouselImageThree from "../assets/fancy_shoes.jpg";
-import Promotion from "../components/UI/Promotion";
+import Promotion from "../components/UI/Promotions/Promotion";
 
 export default function Home() {
   return (
@@ -50,15 +50,15 @@ export default function Home() {
         imageThreeAlt="Fancy mens Shoes"
         imageThreeDesc="Suit the occassion"
       />
+      <Promotion
+        text="10% Student Discount across the whole store"
+        text_two="Click for more details"
+      />
       <ProductCard
         title="Womens Shoes"
         text="Fantastic current trends at our lowest prices. Click to find out more."
         image={womensShoesImage}
         price="64.99"
-      />
-      <Promotion
-        text="10% Student Discount across the whole store"
-        text_two="Click for more details"
       />
       <ProductCard
         title="Running Shoes"
