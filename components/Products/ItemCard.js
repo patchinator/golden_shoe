@@ -135,7 +135,7 @@ const ItemCard = (props) => {
             Need it quick? Select one of our Fast Delivery options at checkout.
           </div>
           <div className={style.shipping_info_two}>Free returns</div>
-          <div className={style.shipping_info_three}>T&C's apply</div>
+          <div className={style.shipping_info_three}>T&Cs apply</div>
         </div>
       </div>
     </div>
