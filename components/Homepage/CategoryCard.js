@@ -1,4 +1,4 @@
-import style from "./ProductCard.module.scss";
+import style from "./CategoryCard.module.scss";
 import Image from "next/image";
 
 const ProductCard = (props) => {

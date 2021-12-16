@@ -2,12 +2,13 @@ import Head from "next/head";
 
 // components
 import Navbar from "../components/Header/Navbar";
-import ProductCard from "../components/ProductCard";
+import CategoryCard from "../components/Homepage/CategoryCard";
 import Carousel from "../components/UI/Carousels/Carousel";
 import Footer from "../components/Footer/Footer";
-import DesktopImage from "../components/DesktopImage";
-import DesktopImageTwo from "../components/DesktopImageTwo";
+import DesktopImage from "../components/Homepage/DesktopImage";
+import DesktopImageTwo from "../components/Homepage/DesktopImageTwo";
 import PromotionDesktop from "../components/UI/Promotions/PromotionDesktop";
+import Promotion from "../components/UI/Promotions/Promotion";
 
 // card images
 import womensShoesImage from "../assets/womens_shoes.jpg";
@@ -20,7 +21,6 @@ import desktopMensBootsImage from "../assets/desktop_image_two.jpg";
 import carouselImageOne from "../assets/womens_boots_2.jpg";
 import carouselImageTwo from "../assets/womens_shoes_2.jpg";
 import carouselImageThree from "../assets/fancy_shoes.jpg";
-import Promotion from "../components/UI/Promotions/Promotion";
 
 export default function Home() {
   return (
@@ -54,19 +54,19 @@ export default function Home() {
         text="10% Student Discount across the whole store"
         text_two="Click for more details"
       />
-      <ProductCard
+      <CategoryCard
         title="Womens Shoes"
         text="Fantastic current trends at our lowest prices. Click to find out more."
         image={womensShoesImage}
         price="64.99"
       />
-      <ProductCard
+      <CategoryCard
         title="Running Shoes"
         text="Burn off that lockdown waistline in style! We have all the top brands stocked."
         image={trainersImage}
         price="42.50"
       />
-      <ProductCard
+      <CategoryCard
         title="Womens Boots"
         text="Winter is here. Keep those feet snuggly with some of the finest and warmest
          boots you've ever tried."

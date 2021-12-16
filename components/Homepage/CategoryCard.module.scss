@@ -1,8 +1,8 @@
-@import "../styles/media.scss";
-@import "../styles/colors.scss";
+@import "../../styles/media.scss";
+@import "../../styles/colors.scss";
 
 .card {
-  margin-bottom: 0.5rem;
+  margin-bottom: -0.3rem;
 
   @media screen and (min-width: $phone) {
     display: none;
@@ -37,6 +37,11 @@
       .info_text {
         padding: 0.25rem;
         font-size: 4vw;
+        font-weight: bolder;
+
+        @media screen and (max-width: $phone) {
+          font-size: 3vw;
+        }
       }
 
       .info_price {
