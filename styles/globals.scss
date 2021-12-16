@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 
 html,
 body {
@@ -10,6 +11,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   width: 100%;
   overflow-x: hidden;
+
+  font-family: "Roboto Mono", monospace;
 }
 
 a {

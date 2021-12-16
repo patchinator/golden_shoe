@@ -1,5 +1,6 @@
 import style from "./DesktopImage.module.scss";
 import Image from "next/image";
+import MenuButton from "./UI/Buttons/MenuButton";
 
 const DesktopImage = (props) => {
   return (
@@ -14,6 +15,9 @@ const DesktopImage = (props) => {
           20% off only applies when £50 or more is spent online. Terms and
           Conditions apply. For more information check out T&C on our website.
         </div>
+      </div>
+      <div className={style.button}>
+        <MenuButton>womens shoes</MenuButton>
       </div>
     </div>
   );

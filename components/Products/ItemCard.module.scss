@@ -1,0 +1,173 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+.container {
+  margin: 1rem 15% 1rem 15%;
+  display: flex;
+  position: relative;
+
+  @media screen and (max-width: $tablet) {
+    margin: 1rem 5% 1rem 5%;
+  }
+
+  @media screen and (max-width: $phone) {
+    margin: unset;
+    flex-direction: column;
+  }
+
+  .image {
+    flex: 60%;
+    position: relative;
+
+    .button_left,
+    .button_right {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      color: $color_secondary;
+      background: none;
+      border: 1px solid white;
+      border-radius: 50%;
+      transition: 80ms ease-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background: rgba($color: white, $alpha: 0.1);
+      }
+    }
+
+    .button_left {
+      top: 50%;
+      left: 1rem;
+    }
+
+    .button_right {
+      top: 50%;
+      right: 1rem;
+    }
+  }
+
+  .info {
+    flex: 40%;
+    // background: grey;
+    margin-left: 1rem;
+
+    @media screen and (max-width: $phone) {
+      margin: 1rem;
+    }
+
+    .title {
+      font-size: 2.8vw;
+      margin-bottom: 1rem;
+      font-weight: bolder;
+
+      @media screen and (max-width: $phone) {
+        font-size: 5vw;
+      }
+    }
+
+    .price {
+      font-size: 2vw;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid black;
+
+      @media screen and (max-width: $phone) {
+        font-size: 4vw;
+      }
+    }
+
+    .discount {
+      display: flex;
+      background: $color_secondary;
+      padding: 0.5rem;
+      margin: 1rem;
+
+      .discount_icon {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+        color: $color_primary;
+      }
+
+      .discount_text {
+        flex: 80%;
+      }
+    }
+
+    .color {
+      font-size: 2vw;
+      margin-bottom: 4rem;
+
+      @media screen and (max-width: $phone) {
+        font-size: 4vw;
+        margin-bottom: 5rem;
+      }
+    }
+
+    .size {
+      margin-bottom: 1rem;
+
+      .size_header {
+        margin-bottom: 0.5rem;
+      }
+
+      select {
+        padding: 0.5rem;
+        outline: none;
+        width: 100%;
+
+        @media screen and (max-width: $phone) {
+          font-size: 20px;
+        }
+
+        .no_stock {
+          color: grey;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 1rem;
+    }
+
+    .delivery_estimate {
+      font-size: 1.5vw;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid;
+
+      @media screen and (max-width: $phone) {
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .shipping {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      padding: 0.5rem;
+      margin: 1rem;
+      font-size: 12px;
+      font-weight: bold;
+
+      .shipping_info_one,
+      .shipping_info_two {
+        margin-bottom: 0.5rem;
+      }
+
+      .shipping_info_three {
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+          color: grey;
+        }
+      }
+    }
+  }
+}

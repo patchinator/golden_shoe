@@ -77,7 +77,9 @@ const Navbar = () => {
         </div>
 
         <div className={style.men}>
-          <p>Men</p>
+          <Link href="/mens/timberland-boots" passHref>
+            <a>Men</a>
+          </Link>
         </div>
         <div className={style.women}>
           <p>Women</p>
@@ -127,7 +129,7 @@ const Navbar = () => {
                 <FontAwesomeIcon className={style.icon} icon={faHome} />
               </div>
             </Link>
-            <Link href="/products" passHref>
+            <Link href="/mens/timberland-boots" passHref>
               <div className={style.option}>
                 <p>Products</p>
                 <FontAwesomeIcon className={style.icon} icon={faShoePrints} />

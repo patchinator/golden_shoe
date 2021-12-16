@@ -33,11 +33,11 @@ export default function Home() {
       <Navbar />
       {/* desktop --------------------------------------------------------- desktop */}
       <DesktopImage image={desktopWomensBootsImage} alt="Womens Shoes" />
-      <DesktopImageTwo image={desktopMensBootsImage} alt="Mens Boots" />
       <PromotionDesktop
         text="10% Student Discount across the whole store"
         text_two="Click for more details"
       />
+      <DesktopImageTwo image={desktopMensBootsImage} alt="Mens Boots" />
       {/* mobile ---------------------------------------------------------- mobile */}
       <Carousel
         imageOne={carouselImageOne}
