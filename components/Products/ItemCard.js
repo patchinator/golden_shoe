@@ -120,6 +120,11 @@ const ItemCard = (props) => {
             <CTAButton>purchase</CTAButton>
           </div>
         </div>
+        <div className={style.delivery_estimate}>
+          <div>
+            Order now and it could arrive before: <strong>Weds 22nd</strong>{" "}
+          </div>
+        </div>
         <div>
           <div>
             Christmas shopping? Check our delivery guidelines so that you can
