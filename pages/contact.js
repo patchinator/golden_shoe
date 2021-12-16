@@ -1,13 +1,18 @@
+import { Fragment } from "react";
+
+// style
+import style from "./contact.module.scss";
+
+// components
 import ContactCards from "../components/Contact/ContactCards";
 import ContactInfo from "../components/Contact/ContactInfo";
 import ContactUs from "../components/Contact/ContactUs";
 import Navbar from "../components/Header/Navbar";
-import style from "./contact.module.scss";
 import Footer from "./../components/Footer/Footer";
 
 const ContactPage = () => {
   return (
-    <section>
+    <Fragment>
       <Navbar />
       <div className={style.container}>
         <ContactInfo />
@@ -15,7 +20,7 @@ const ContactPage = () => {
         <ContactUs />
       </div>
       <Footer />
-    </section>
+    </Fragment>
   );
 };
 

@@ -1,8 +1,10 @@
+import { useState } from "react";
+
+// components
 import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer/Footer";
 import ItemCard from "../../components/Products/ItemCard";
 import Modal from "../../components/UI/Modals/Modal";
-import { useState } from "react";
 
 const TimberlandBoots = () => {
   const [showModal, setShowModal] = useState(false);
