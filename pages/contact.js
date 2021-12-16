@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 // style
-import style from "./contact.module.scss";
+import style from "./../styles/contact.module.scss";
 
 // components
 import ContactCards from "../components/Contact/ContactCards";
