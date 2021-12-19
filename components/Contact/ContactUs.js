@@ -32,7 +32,7 @@ const ContactUs = () => {
           </div>
           <div className={style.modal_text_screen}>
             <div className={style.modal_text}>
-              Hey @User, how can i help today?
+              Hey @User, how can I help today?
             </div>
           </div>
           <form className={style.modal_text_form}>

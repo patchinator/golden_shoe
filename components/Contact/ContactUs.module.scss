@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../styles/media.scss";
 
 .header {
   font-size: 20px;
@@ -45,6 +46,14 @@
   background: white;
   width: 25%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: $tablet) {
+    width: 35%;
+  }
+
+  @media screen and (max-width: $phone) {
+    width: 75%;
+  }
 
   .modal_options {
     background: $color_primary;
