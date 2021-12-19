@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 
 // style + images
@@ -102,6 +101,7 @@ const ItemCard = (props) => {
             <option>Please Select</option>
             {DUMMY_DATA.map((data) => (
               <option
+                disabled={data.stock === 0 ? true : null}
                 className={`${data.stock === 0 && style.no_stock}`}
                 key={data.key}
               >
@@ -136,7 +136,7 @@ const ItemCard = (props) => {
             Need it quick? Select one of our Fast Delivery options at checkout.
           </div>
           <div className={style.shipping_info_two}>Free returns</div>
-          <div className={style.shipping_info_three}>T&C's apply</div>
+          <div className={style.shipping_info_three}>T&Cs apply</div>
         </div>
       </div>
     </div>

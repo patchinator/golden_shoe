@@ -178,6 +178,10 @@
   }
 
   .navbar_bottom {
+    @media screen and (max-width: $tablet) {
+      font-size: 12px;
+    }
+
     @media screen and (max-width: $phone) {
       display: none;
     }
