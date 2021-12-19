@@ -101,6 +101,7 @@ const ItemCard = (props) => {
             <option>Please Select</option>
             {DUMMY_DATA.map((data) => (
               <option
+                disabled={data.stock === 0 ? true : null}
                 className={`${data.stock === 0 && style.no_stock}`}
                 key={data.key}
               >
