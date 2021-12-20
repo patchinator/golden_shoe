@@ -1,4 +1,6 @@
 import style from "./ContactCards.module.scss";
+
+// local imports
 import ContactCard from "./ContactCard";
 
 const ContactCards = () => {

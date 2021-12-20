@@ -1,5 +1,7 @@
 import style from "./DesktopImageTwo.module.scss";
 import Image from "next/image";
+
+// local imports
 import MenuButton from "./../UI/Buttons/MenuButton";
 
 const DesktopImageTwo = (props) => {

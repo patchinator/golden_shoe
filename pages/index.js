@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Fragment } from "react";
 
 // components
 import Navbar from "../components/Header/Navbar";
@@ -24,14 +25,14 @@ import carouselImageThree from "../assets/fancy_shoes.jpg";
 
 export default function Home() {
   return (
-    <div>
+    <Fragment>
       <Head>
         <title>Golden Shoe</title>
         <meta name="description" content="London's finest cobblers" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      {/* desktop --------------------------------------------------------- desktop */}
+      {/* desktop -------------------------------------------------------- desktop */}
       <DesktopImage image={desktopWomensBootsImage} alt="Womens Shoes" />
       <PromotionDesktop
         text="10% Student Discount across the whole store"
@@ -74,6 +75,6 @@ export default function Home() {
         price="59.99"
       />
       <Footer />
-    </div>
+    </Fragment>
   );
 }

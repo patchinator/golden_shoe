@@ -1,9 +1,8 @@
-// Hooks & Next
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// Internal Imports
+// local imports
 import style from "./Navbar.module.scss";
 import logo from "../../assets/golden_shoe_logo_3.png";
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
-
-// style + images
 import style from "./ItemCard.module.scss";
+
+// images
 import timberlandBootsImage from "../../assets/timberland_boots.jpg";
 
 // local imports

@@ -1,4 +1,6 @@
 import style from "./Footer.module.scss";
+
+// fonts
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
