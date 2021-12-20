@@ -23,21 +23,11 @@ import {
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  // const [showNavbar, setShowNavbar] = useState(true);
   const dropdownRef = useRef(null);
 
   const dropdownHandler = () => {
     setShowDropdown((prev) => !prev);
   };
-
-  // let scrollPos = 0;
-  // const navbarControl = () => {
-  //   if (window.scrollY > 100) {
-  //     setShowNavbar(false);
-  //   } else {
-  //     setShowNavbar(true);
-  //   }
-  // };
 
   useEffect(() => {
     const clickOutsideHandler = (event) => {
@@ -51,11 +41,9 @@ const Navbar = () => {
     };
 
     document.addEventListener("click", clickOutsideHandler);
-    // window.addEventListener("scroll", navbarControl);
 
     return () => {
       document.removeEventListener("click", clickOutsideHandler);
-      // window.removeEventListener("scroll", navbarControl);
     };
   }, [showDropdown]);
 
